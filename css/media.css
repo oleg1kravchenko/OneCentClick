@@ -1208,6 +1208,8 @@
     .slider-reviews {
         margin-right: -15px;
     }
+    .item-portfolio__content,
+    .item-advertising,
     .item-etap,
     .item-guarantee {
         max-width: 330px;
