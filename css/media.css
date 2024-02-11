@@ -941,7 +941,7 @@
         min-height: 369px;
         padding-bottom: 45px;
         margin-bottom: 25px;
-        max-width: 400px;
+        max-width: 359px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -991,7 +991,7 @@
         padding: 17px 20px;
         padding-bottom: 27px;
         line-height: 120%;
-        max-width: 380px;
+        max-width: 350px;
         background-image: url(../img/bg_portfolio_mob1.svg);
     }
     .item-portfolio:nth-child(even) .item-portfolio__content {
