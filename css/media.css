@@ -826,6 +826,7 @@
         width: 380px;
     }
     .billbord {
+        padding-top: 20px;
         padding-bottom: 100px;
     }
     .about {
@@ -862,6 +863,7 @@
         margin-top: 30px;
         margin-bottom: 35px;
         font-size: 18px;
+        max-width: 326px;
     }
     .item-number__value {
         font-size: 48px;
@@ -1056,10 +1058,11 @@
         height: 17px;
     }
     .item-question__content {
-        max-width: 334px;
+        max-width: 290px;
         padding: 15px 20px;
         padding-bottom: 32px;
-        margin: 0 10px;
+        margin: 0;
+        margin-left: auto;
         margin-bottom: 15px;
         background-image: url(../img/bg_question_mob.svg);
     }
@@ -1157,9 +1160,10 @@
         text-align: center;
     }
     .wrapper {
+        padding-top: 60px;
         background-image: url(../img/bg_main_mobile.svg);    
         background-size: initial;
-        background-position: 50% 30px;
+        background-position: 50% 0px;
     }
     .menu-mobile {
         padding-top: 15px;
