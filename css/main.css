@@ -1139,6 +1139,6 @@ form {
 	max-width: 910px;
 	min-height: 210px;
 }
-.slider-reviews .slick-slide:nth-child(4) .item-review::after {
+.item-review_4::after {
 	display: none;
 }
