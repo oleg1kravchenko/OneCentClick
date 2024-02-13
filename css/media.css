@@ -1281,6 +1281,9 @@
     .item-number {
         max-width: 193px;
     }
+    .item-portfolio__content > p br {
+        display: none;
+    }
 }
 @media only screen and (max-width : 576px) {
     .slider-numbers,
