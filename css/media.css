@@ -1032,7 +1032,7 @@
     .item-portfolio__image::after,
     .item-portfolio__image img,
     .item-portfolio__image {
-        border-radius: 30px;
+        border-radius: 34px;
     }
     .item-portfolio__image {
         margin: 0 auto;
