@@ -94,6 +94,7 @@
     }
     .item-number {
         font-size: 17px;
+        max-width: 270px;
     }
     .about__bottom {
         padding-top: 105px;
@@ -272,6 +273,7 @@
     .item-review .link-page {
         margin-top: 11px;
     }
+    .slider-numbers,
     .slider-reviews {
         margin-right: calc((100vw - 1130px) / 2* -1);
     }
@@ -563,6 +565,7 @@
     .reviews .title-section {
         padding-bottom: 30px;
     }
+    .slider-numbers,
     .slider-reviews {
         margin-right: calc((100vw - 890px) / 2* -1);
     }
@@ -598,6 +601,10 @@
     .consultation__title {
         font-size: 32px;
         margin-bottom: 65px;
+    }
+    .item-number {
+        margin-right: 25px;
+        max-width: 230px;
     }
 }
 
@@ -744,6 +751,7 @@
     .guarantee {
         padding-bottom: 60px;
     }
+    .slider-numbers,
     .slider-reviews {
         margin-right: calc((100vw - 685px) / 2* -1);
     }
@@ -770,6 +778,14 @@
     }
     .item-portfolio.active .item-portfolio__title {
         color: #FFD500;
+    }
+    .item-team__image img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+        -o-filter: grayscale(0);
     }
 }
 
@@ -1069,6 +1085,7 @@
     .help {
         padding-bottom: 100px;
     }
+    .slider-numbers,
     .slider-reviews {
         margin-right: calc((100vw - 510px) / 2* -1);
     }
@@ -1203,8 +1220,12 @@
     .menu-mobile .list-socials a path {
         fill: #130e0d;
     }
+    .item-number {
+        max-width: 193px;
+    }
 }
 @media only screen and (max-width : 576px) {
+    .slider-numbers,
     .slider-reviews {
         margin-right: -15px;
     }

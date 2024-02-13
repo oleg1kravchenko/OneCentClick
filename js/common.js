@@ -95,14 +95,34 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$('.slider-reviews').slick({
 		arrows: false,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		variableWidth: true,
 		touchThreshold: 1000,
-		slidesToShow: 4,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
 	});
+
+	$('.slider-numbers').slick({
+		arrows: false,
+		dots: false,
+		infinite: false,
+		variableWidth: true,
+		touchThreshold: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+			]
+		});
 
 	var show = true;
 	var countbox = ".item-number";
@@ -114,8 +134,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
         var d_height = $(document).height(); // Высота всего документа
         var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
         if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-        	$('.item-number__value span').css('opacity', '1');
-        	$('.item-number__value span').spincrement({
+        	$('.item-number__value span[data-from]').css('opacity', '1');
+        	$('.item-number__value span[data-from]').spincrement({
         		from: -1.5,
         		thousandSeparator: "",
         		duration: 2000
@@ -125,7 +145,17 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
         }
     });
 
-
+	$(".item-review .link-page").click(function(e) {
+		e.preventDefault();
+		if ($(this).parent().hasClass("active")) {
+			$(this).parent().removeClass("active");
+			$(this).html("Читать отзыв полностью");
+			
+		} else {
+			$(this).parent().addClass("active");
+			$(this).html("Свернуть");
+		}
+	  });
 
 	
 	$(".input-phone").mask("+7 (999) 999-99-99");

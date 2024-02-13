@@ -251,10 +251,33 @@ form {
 .item-team {
 	color: #bbb;
 }
+.item-team__image {
+	background-image: url(../img/bg_team.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 .item-team__image img {
 	max-width: 100%;
 	height: auto;
 	display: block;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+}
+.item-team:hover .item-team__image img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
 }
 .item-team__name {
 	font-size: 48px;
@@ -492,6 +515,12 @@ form {
 	background-clip: initial;
 	-webkit-background-clip: initial;
 	-webkit-text-fill-color: initial;
+}
+.slick-prev {
+	left: 0;
+}
+.slick-next {
+	right: 0;
 }
 .slider-for-advertising {
 	margin-top: auto;
@@ -905,6 +934,7 @@ form {
 .item-review__text p {
 	margin: 0;
 }
+.slider-numbers,
 .slider-reviews {
 	margin-right: calc((100vw - 1410px) / 2* -1);
 }
@@ -1031,8 +1061,20 @@ form {
 .menu-mobile {
 	display: none;
 }
+.slider-numbers:not(.slick-initialized) > li:not(:first-child),
 .slider-reviews:not(.slick-initialized) > li:not(:first-child),
 .slider-for-advertising:not(.slick-initialized) > li:not(:first-child),
 .slider-nav-advertising:not(.slick-initialized) > li:not(:first-child) {
 	display: none;
+}
+.item-number {
+	margin-right: 70px;
+	max-width: 327px;
+}
+.item-number__value {
+	white-space: nowrap;
+}
+.item-review.active .item-review__text {
+	display: block;
+	-webkit-line-clamp: initial;
 }
