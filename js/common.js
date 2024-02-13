@@ -95,8 +95,10 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$('.slider-reviews').slick({
 		arrows: false,
 		dots: false,
-		infinite: false,
+		infinite: true,
 		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		touchThreshold: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -107,8 +109,10 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$('.slider-numbers').slick({
 		arrows: false,
 		dots: false,
-		infinite: false,
+		infinite: true,
 		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		touchThreshold: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
