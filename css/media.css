@@ -1284,6 +1284,9 @@
     .item-portfolio__content > p br {
         display: none;
     }
+    .item-review::after {
+        background-image: url(../img/bg_review_mob_active.svg);
+    }
 }
 @media only screen and (max-width : 576px) {
     .slider-numbers,

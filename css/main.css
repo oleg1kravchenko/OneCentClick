@@ -889,6 +889,29 @@ form {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
+	position: relative;
+	z-index: 1;
+}
+.item-review::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg_review_active.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	z-index: -1;
+	opacity: 0;
+}
+.item-review.active::after {
+	opacity: 1;
+}
+.item-review.active .link-page {
+	margin-top: 5px;
 }
 .item-review__head {
 	margin-bottom: 20px;
