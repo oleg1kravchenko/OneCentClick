@@ -151,17 +151,25 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	$(".item-review .link-page").click(function(e) {
 		e.preventDefault();
-		if ($(this).parent().hasClass("active")) {
-			$(this).parent().removeClass("active");
-			$(this).html("Читать отзыв полностью");
-			
-		} else {
-			$(this).parent().addClass("active");
-			$(this).html("Свернуть");
-		}
+		var thisTitle = $(this).parents(".item-review").find(".item-review__name").html();
+
+
+		 $('.item-review__name').each(function() {
+			if($(this).is(':contains("'+thisTitle+'")'))  {
+				if ($(this).parents(".item-review").hasClass("active")) {
+					$(this).parents(".item-review").removeClass("active");
+					$(this).parents(".item-review").find(".link-page").html("Читать отзыв полностью");
+					
+				} else {
+					$(this).parents(".item-review").addClass("active");
+					$(this).parents(".item-review").find(".link-page").html("Свернуть");
+				}
+
+			}      
+		});
 	  });
 
-	
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
