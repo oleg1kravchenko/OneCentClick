@@ -801,7 +801,7 @@
         visibility: visible;
         opacity: 1;
         transition: initial;
-       /* display: none;*/
+        display: none;
     }
     .item-portfolio {
         display: block;
