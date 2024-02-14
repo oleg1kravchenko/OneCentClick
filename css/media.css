@@ -1222,6 +1222,7 @@
     }
     .item-review__text {
         font-size: 14px;
+        -webkit-line-clamp: 7;
         margin-bottom: 0;
     }
     .item-review.active  .item-review__text {

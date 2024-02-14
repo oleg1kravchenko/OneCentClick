@@ -1160,3 +1160,6 @@ form {
 .item-portfolio_4 p span {
 	text-transform: uppercase;
 }
+.item-review_3::after {
+	background-image: url(../img/bg_review3_active.svg);
+}
