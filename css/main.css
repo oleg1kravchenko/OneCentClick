@@ -979,7 +979,7 @@ form {
 	margin-left: 10px;
 	background-image: url(../img/arrow.svg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center right;
 	background-size: cover;
 	transition: all 0.7s;
 }
@@ -988,6 +988,10 @@ form {
 }
 .item-review .link-page {
 	margin-top: 16px;
+}
+.item-review.active .link-page::after {
+	width: 15px;
+	transform: rotate(-90deg) !important;
 }
 
 .consultation {

@@ -343,7 +343,7 @@
         padding-bottom: 68px;
     }
     .item-review_3 {
-        padding-bottom: 60px;
+        padding-bottom: 65px;
     }
     .item-review_4 {
         padding-bottom: 66px;
@@ -699,7 +699,7 @@
         padding-bottom: 65px;
     }
     .item-review_3 {
-        padding-bottom: 58px;
+        padding-bottom: 63px;
     }
     .item-review_4 {
         padding-bottom: 66px;
@@ -1344,6 +1344,9 @@
     .item-review::after {
         background-image: url(../img/bg_review_mob_active.svg);
     }
+    .item-review::after {
+        background-image: url(../img/bg_review_mob_active.svg);
+    }
     .item-portfolio__item {
         width: 100%;
         margin-right: 0;
@@ -1362,7 +1365,10 @@
         display: none;
     }
     .item-review_3 {
-        padding-bottom: 50px;
+        padding-bottom: 47px;
+    }
+    .item-review_3::after {
+        background-image: url(../img/bg_review3_mob_active.svg);
     }
     .item-review_4 {
         padding-bottom: 55px;
